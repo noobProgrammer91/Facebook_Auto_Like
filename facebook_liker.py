@@ -1,11 +1,14 @@
-
 #importing the modules
 import pyautogui
 import time
-
+import sys
 
 #Giving the user certain time to open the wesite
+print("Open the facebook timeline")
 time.sleep(5)
+print("Starting the bot..")
+time.sleep(2)
+print("Bot activated..")
 
 def main_code():
     while True:
@@ -20,11 +23,13 @@ def main_code():
             #This will press the like button
             pyautogui.press('enter')
             time.sleep(5)
+            print('''(Ctrl + C) to exit the program''')
         except:
             KeyboardInterrupt
-            input("Press CTRl+C to exit")
+            sys.exit()
+            
 
-main_code()    
+main_code()   
 
     
    
